@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Write | Inkwell</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="create">
+<header class="nav"><div class="wrap" id="nav"></div></header>
+<main class="wrap"><div class="card form-box wide">
+<h2 id="head">Write a new blog</h2><p class="sub">Clear title, honest story. Save a draft any time.</p>
+<form id="blogForm" novalidate>
+<label for="title">Title</label><input id="title" type="text" maxlength="90">
+<label for="category">Category</label>
+<select id="category" style="width:100%;padding:11px 12px"><option>Technology</option><option>Lifestyle</option><option>Education</option><option>Travel</option><option>Other</option></select>
+<label for="content">Content</label><textarea id="content" placeholder="Separate paragraphs with a blank line."></textarea>
+<p class="hint" id="stat">0 words &middot; 1 min read</p>
+<div class="msg" id="msg"></div>
+<div class="actions"><button class="btn" type="button" id="pub">Publish</button><button class="btn ghost" type="button" id="draft">Save draft</button><a class="btn ghost" href="dashboard.html">Cancel</a></div>
+</form></div></main>
+<footer>&copy; 2026 Inkwell. Built with HTML, CSS and JavaScript.</footer>
+<script src="script.js"></script>
+</body>
+</html>
